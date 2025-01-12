@@ -47,6 +47,7 @@ class Git {
   late final showBranchSha1Name = showBranch.arg('--sha1-name');
   late final status = rawEc('git status');
   late final statusSb = status.arg('-sb');
+  late final reset = rawEc('git reset');
 
   final Context context;
 
